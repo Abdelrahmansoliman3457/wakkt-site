@@ -1,0 +1,235 @@
+@font-face {
+  font-family: myfont2;
+  src: url("../fonts/URW\ DIN\ Arabic\ Medium.ttf");
+}
+body.rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: "myfont2", sans-serif !important;
+}
+.rtl .drop-down-content {
+  left: -15px;
+  right: unset;
+}
+.rtl .imgs-container .upper-phone {
+  left: -130px;
+  right: unset;
+}
+.rtl .arrow-img::after {
+  right: 110%;
+  left: unset;
+}
+.rtl .animated-imgs img {
+  transform: rotate(40deg);
+}
+.rtl .animated-imgs img:first-child {
+  left: 170px;
+  right: unset;
+}
+.rtl .animated-imgs img:nth-child(2) {
+  left: 150px;
+  right: unset;
+  transform: translateY(150px) rotate(40deg);
+}
+.rtl .animated-imgs img:nth-child(3) {
+  left: 400px;
+  right: unset;
+  transform: translateY(-150px) rotate(40deg);
+}
+.rtl .animated-imgs img:nth-child(4) {
+  left: 380px;
+  right: unset;
+  transform: translateY(180px) rotate(40deg);
+}
+/* animation */
+
+// @keyframes animate1 {
+//   0% {
+//     left: 170px;
+//     right: unset;
+//   }
+//   50% {
+//     left: 110px;
+//     right: unset;
+//   }
+//   100% {
+//     left: 170px;
+//     right: unset;
+//   }
+// }
+// @keyframes animate2 {
+//   0% {
+//     left: 150px;
+//     right: unset;
+//     transform: translateY(150px) rotate(40deg);
+//   }
+//   50% {
+//     left: 120px;
+//     right: unset;
+//     transform: translateY(210px) rotate(40deg);
+//   }
+//   100% {
+//     left: 150px;
+//     right: unset;
+//     transform: translateY(150px) rotate(40deg);
+//   }
+// }
+// @keyframes animate3 {
+//   0% {
+//     left: 400px;
+//     right: unset;
+//     transform: translateY(-150px) rotate(40deg);
+//   }
+//   50% {
+//     left: 470px;
+//     right: unset;
+//     transform: translateY(-170px) rotate(40deg);
+//   }
+//   100% {
+//     left: 400px;
+//     right: unset;
+//     transform: translateY(-150px) rotate(40deg);
+//   }
+// }
+// @keyframes animate4 {
+//   0% {
+//     left: 380px;
+//     right: unset;
+//     transform: translateY(180px) rotate(40deg);
+//   }
+//   50% {
+//     left: 440px;
+//     right: unset;
+//     transform: translateY(260px) rotate(40deg);
+//   }
+//   100% {
+//     left: 380px;
+//     right: unset;
+//     transform: translateY(180px) rotate(40deg);
+//   }
+// }
+.rtl .slider_nav .after_span {
+  right: 0;
+  left: unset;
+}
+.rtl .slider_nav .qestions.active ~ .after_span {
+  -webkit-margin-start: 51%;
+  margin-inline-start: 51%;
+}
+.rtl .price-box::after {
+  right: 0;
+  left: unset;
+}
+/* start responsive*/
+@media (max-width: 1024px) {
+  .rtl .show-app::after {
+    right: 0;
+    left: unset;
+  }
+  .rtl .arrow-img::after {
+    right: 90%;
+    left: unset;
+  }
+  .rtl .links {
+    right: 0px;
+    left: unset;
+    transform: translateX(100%);
+  }
+  .rtl .slideto {
+    transform: translatex(0);
+  }
+  .rtl .nav-layer {
+    right: 280px;
+    left: unset;
+    transform: translateX(-550%);
+  }
+  .rtl .links li a:hover {
+    transform: translateX(-10px);
+  }
+
+  .rtl .coll-icon span {
+    right: 8px;
+    left: unset;
+  }
+
+  .rtl .coll-icon.active span:nth-child(1) {
+    right: 10px;
+    left: unset;
+  }
+
+  .rtl .coll-icon.active span:nth-child(2) {
+    right: 10px;
+    left: unset;
+  }
+
+  .rtl .coll-icon.active span:nth-child(3) {
+    transform: translatex(-100px);
+  }
+  .rtl .imgs-container .upper-phone {
+    left: 120px;
+    right: unset;
+  }
+}
+/*edited*/
+@media (max-width: 767px) {
+  @keyframes animate2 {
+    0% {
+      left: 20px;
+      right: unset;
+      transform: translateY(150px) rotate(-10deg);
+    }
+    50% {
+      left: 120px;
+      right: unset;
+      transform: translateY(210px) rotate(10deg);
+    }
+    100% {
+      left: 20px;
+      right: unset;
+      transform: translateY(150px) rotate(-10deg);
+    }
+  }
+  .rtl .animated-imgs img:nth-child(2) {
+    transform: translateY(150px) rotate(-10deg);
+  }
+
+  .rtl .coll-icon span {
+    right: 7px;
+    left: unset;
+  }
+
+  .rtl .coll-icon.active span:nth-child(1) {
+    right: 7px;
+    left: unset;
+  }
+
+  .rtl .coll-icon.active span:nth-child(2) {
+    right: 7px;
+    left: unset;
+  }
+}
+.rtl .arrow-img::after {
+  transform: rotateY(180deg);
+}
+/*new classes*/
+.rtl .tl {
+  text-align: right;
+}
+.rtl .who-us-box {
+  text-align: right;
+}
+.rtl .show-app-left {
+  text-align: right;
+}
+.rtl .left-text {
+  text-align: right;
+}
+.rtl .slideto {
+  transform: translatex(0);
+}
+.rtl .show-app-bg {
+    background-position: bottom left;
+    background: url(../imgs/flipVector.png);
+    background-repeat: no-repeat ;
+    background-size: 62%;
+  }
